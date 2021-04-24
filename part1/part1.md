@@ -1,11 +1,11 @@
-part1 a.
+## Part 1a
 1. `values added: 20`
 2. `final result: 20`
 3. `values added: 20`
 4. ReferenceError because variables declared with `let` does have block scope. Variable `result` is declared inside a block, so it is not visible outside the block.
 
 
-part1 b.
+## Part 1b
 1. It prints: `3`. That is because the array of `prices` has `length=3`, which causes the variable `i` increases until it reaches `3`; also `i` is declared with `var`, so it is visible outside the for-loop. So after the for-loop, `console.log(i)` will print `3`.
 2. It prints: `150`. At the last iteration of the for-loop, we have `i=2` and `prices[i]=300` and `discount=0.5`, for which `discountedPrice = prices[2] * (1 - discount) = 300 * 0.5=150`. Also, `discountedPrice` is declared with `var`, so it is visible outside the block. After the for-loop, `discountedPrice` is evetually assigned with `150`, so `console.log(discountedPrice)` will print `150`.
 3. It prints: `150`. After the for-loop, we know that `discountedPrice=150` and `finalPrice` is assigned with `finalPrice = Math.round(discountedPrice * 100) / 100`, so `finalPrice = 150`. Therefore, `console.log(finalPrice)` will print `150`.
