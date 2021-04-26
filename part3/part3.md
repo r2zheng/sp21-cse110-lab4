@@ -10,4 +10,4 @@
 8. Server: `Apache`
 9. Last-Modified: `Tue, 26 Jan 2021 22:14:13 GMT`
 10. Content-Type: `application/json`
-11. Method: `fetchData()` inside `part2.js` called `fetch('./citylots.json')`
+11. Method: `fetchData()` inside `part2.js` triggered by the onClick of the button (and it called `fetch('./citylots.json')`)
